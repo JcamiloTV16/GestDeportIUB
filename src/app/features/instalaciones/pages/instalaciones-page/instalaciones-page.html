@@ -1,0 +1,37 @@
+<div class="card shadow-sm">
+  <div class="card-header bg-info text-white">
+    <h4 class="mb-0">Instalaciones Deportivas</h4>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Capacidad</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (i of instalaciones; track i.id) {
+            <tr>
+              <td>{{ i.id }}</td>
+              <td>{{ i.nombre }}</td>
+              <td>{{ i.tipo }}</td>
+              <td>{{ i.capacidad }}</td>
+              <td>
+                @if (i.estado === 'Disponible') {
+                  <span class="badge bg-success">{{ i.estado }}</span>
+                } @else {
+                  <span class="badge bg-warning text-dark">{{ i.estado }}</span>
+                }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

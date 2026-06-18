@@ -1,0 +1,14 @@
+
+UXBkqm9CIkhfEjTBVB42cJdtKOI2   admin         admin@gestdeport.com  Admin123!      
+
+WbRC08nqnlQhOGTd6gCPNJE4Z663   deportista    deportista@gestdeport.com  Player123!    
+
+vusL3rCE7oT6xHRPtZhbWtVH4iG3   entrenador    entrenador@gestdeport.com Coach123!
+
+
+
+
+
+
+
+

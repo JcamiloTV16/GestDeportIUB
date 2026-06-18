@@ -1,0 +1,22 @@
+<div class="card shadow-sm">
+  <div class="card-header bg-success text-white">
+    <h4 class="mb-0">Catálogo de Deportes</h4>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      @for (d of deportes(); track d.id) {
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center">
+              <span class="material-icons mb-2" [style.color]="d.color" style="font-size: 72px;">
+                {{ d.icono }}
+              </span>
+              <h5 class="card-title mt-2">{{ d.nombre }}</h5>
+              <p class="card-text text-muted">{{ d.descripcion }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

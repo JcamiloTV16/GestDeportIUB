@@ -1,0 +1,20 @@
+<div class="card shadow-sm">
+  <div class="card-header bg-danger text-white">
+    <h4 class="mb-0">Equipos Deportivos</h4>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      @for (e of equipos; track e.id) {
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 border-danger shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ e.nombre }}</h5>
+              <p class="card-text"><strong>Deporte:</strong> {{ e.deporte }}</p>
+              <p class="card-text"><strong>Integrantes:</strong> {{ e.integrantes }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

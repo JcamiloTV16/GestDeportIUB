@@ -1,0 +1,24 @@
+.hero-header {
+  background: linear-gradient(
+    135deg,
+    #0d6efd 0%,
+    #2e5090 50%,
+    #1f3d73 100%
+  );
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.hero-header i {
+  opacity: 0.95;
+}
+
+.hero-header h1 {
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+
+.hero-header p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
