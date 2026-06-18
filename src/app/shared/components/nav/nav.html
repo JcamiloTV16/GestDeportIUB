@@ -31,14 +31,16 @@
 
         @if (usuario()) {
 
-          <li class="nav-item">
-            <a class="nav-link"
-               routerLink="/usuarios"
-               routerLinkActive="active-link">
-              <i class="bi bi-people-fill me-1"></i>
-              Usuarios
-            </a>
-          </li>
+          @if (usuario()?.rol !== 'Deportista') {
+            <li class="nav-item">
+              <a class="nav-link"
+                 routerLink="/usuarios"
+                 routerLinkActive="active-link">
+                <i class="bi bi-people-fill me-1"></i>
+                Usuarios
+              </a>
+            </li>
+          }
 
           <li class="nav-item">
             <a class="nav-link"
@@ -67,23 +69,25 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link"
-               routerLink="/instalaciones"
-               routerLinkActive="active-link">
-              <i class="bi bi-building me-1"></i>
-              Instalaciones
-            </a>
-          </li>
+          @if (usuario()?.rol !== 'Deportista') {
+            <li class="nav-item">
+              <a class="nav-link"
+                 routerLink="/instalaciones"
+                 routerLinkActive="active-link">
+                <i class="bi bi-building me-1"></i>
+                Instalaciones
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link"
-               routerLink="/contacto"
-               routerLinkActive="active-link">
-              <i class="bi bi-envelope-fill me-1"></i>
-              Contacto
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 routerLink="/contacto"
+                 routerLinkActive="active-link">
+                <i class="bi bi-envelope-fill me-1"></i>
+                Contacto
+              </a>
+            </li>
+          }
 
           <li class="nav-item dropdown ms-lg-3">
             <a class="nav-link dropdown-toggle"
